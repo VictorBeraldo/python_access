@@ -33,7 +33,7 @@ def parse_args(parser):
     return args
 def conectar(db_name):
     connStr = (
-    "Driver={aaMicrosoft Access Driver (*.mdb, *.accdb)};"
+    "Driver={Microsoft Access Driver (*.mdb, *.accdb)};"
     "DBQ=%s;" %db_name
     )
     connection = pyodbc.connect(connStr)
